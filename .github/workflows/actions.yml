@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing
 on:
     push:
         branches:
-            - 'siyuan/1-show-courses'
+            - 'main'
 jobs:
     test:
         runs-on: ubuntu-latest

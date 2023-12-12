@@ -17,7 +17,7 @@ def test_is_prefix(courseA):
 
 def test_request_for_changing_room(courseA, mocker):
     mocker.patch(
-        './course.Course.confirmation'
+        'course.Course.confirmation'
     )
     courseA.request_for_changing_room("New Place")
     assert courseA._place == "New Place"

@@ -1,9 +1,9 @@
 from fastapi.testclient import TestClient
-from main import app
-from test_course import courseA
-from test_student import studentA, courseB
-from course import courses
-from student import stds
+from .main import app
+from .test_course import courseA
+from .test_student import studentA, courseB
+from .course import courses
+from .student import stds
 
 client = TestClient(app)
 

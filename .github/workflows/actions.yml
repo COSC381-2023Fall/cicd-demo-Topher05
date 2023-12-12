@@ -15,4 +15,19 @@ jobs:
             - run: pip install pytest-cov
             - run: pip install pytest-mock
             - run: pytest --cov=.
+            - run: python --version
+            - run: pytest --version
+            - run: pytest
+
+    deploy:
+        needs: test
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: akhileshns/heroku-deploy@v3.12.13
+            with:
+                heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+                heroku_app_name: "glacial-meadow-09589"
+                heroku_email: "tophermartus@gmail.com" 
+                usedocker: true
 

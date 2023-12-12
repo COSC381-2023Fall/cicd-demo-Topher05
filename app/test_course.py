@@ -1,4 +1,4 @@
-from course import Course, courses
+from .course import Course, courses
 import pytest
 
 @pytest.fixture

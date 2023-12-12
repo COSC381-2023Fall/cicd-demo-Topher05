@@ -1,4 +1,4 @@
-from course import courses, Course
+from .course import courses, Course
 
 
 class Student:

@@ -1,5 +1,5 @@
-from course import Course, courses
-from student import Student, stdCourses
+from .course import Course, courses
+from .student import Student, stdCourses
 import pytest
 
 courseA = Course("COSC", "111", 30, "John Doe", 
